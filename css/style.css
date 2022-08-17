@@ -1,0 +1,699 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;400;900&display=swap");
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
+}
+
+/*-----------------------HEADER--------------------*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  position: fixed;
+  z-index: +100;
+  width: 100%;
+  box-shadow: 0px 0px 40px rgba(208, 16, 233, 0.5);
+}
+
+.logo img {
+  width: 110px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  height: 105px;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.header li {
+  margin: 0 20px;
+  padding: 0 15px;
+}
+
+.header a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+/*---------------------FOOTER------------------*/
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: #dec0f1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer ul {
+  width: 400px;
+  height: 80px;
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer li {
+  list-style: none;
+  padding: 10px;
+}
+.footer li:nth-child(1) a{
+  background-color: #DD2A7B;
+}
+.footer li:nth-child(2) a{
+  background-color: #0B6BBF;
+}
+.footer li:nth-child(3) a{
+  background-color: black;
+}
+.footer li a{
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2em;
+  border-radius: 60%;
+  background-color: #000000;
+  text-align: center;
+  color: white;
+}
+
+
+
+.copyright {
+  padding: 15px 15px 15px 15px;
+  margin: 20px 0 0 30px;
+  font-size: 20px;
+  color: black;
+}
+
+/*------------------INDEX------------------*/
+.bannerIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 600px;
+}
+
+.bannerNewcollection {
+  width: 100%;
+  height: 20vh;
+}
+
+.bannerNewcollection img {
+  height: 90vh;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.containerBotones {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  height: 100vh;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.botones {
+  width: 390px;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 0 20px 45px;
+  transition: all 400ms ease;
+}
+.botones:hover {
+  transform: translateY(-5%);
+}
+
+.imgBtn1 {
+  background-image: url(../img/BTN1.JPEG);
+}
+.imgBtn2 {
+  background-image: url(../img/BTN2.JPEG);
+}
+.imgBtn3 {
+  background-image: url(../img/BTN3.JPEG);
+}
+
+.btnIndex {
+  display: flex;
+  flex-direction: column;
+  border: white solid;
+  padding: 10px;
+  margin: 380px 60px 0 60px;
+  text-align: center;
+  text-decoration: none;
+  color: violet;
+  background-color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.btnIndex:hover {
+  background-color: rgba(255, 255, 255, 0.041);
+  color: whitesmoke;
+}
+
+.containerMayorista {
+  max-width: 100%;
+  height: 85vh;
+  margin-bottom: 10px;
+  background-image: url(../img/banner\ mayoristas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.botonBanner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.btnMayorista {
+  border: white solid;
+  border-radius: 30px;
+  flex-basis: 20%;
+  margin: 130px 0 0 700px;
+  padding: 10px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  color: orangered;
+  background-color: white;
+}
+
+.btnMayorista:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.mainNewsletter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.tituloNewsletter h2 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 35px;
+  text-shadow: 0 0 5px rgb(186, 100, 226), 0 0 10px rgba(186, 100, 226),
+    0 0 20px rgba(186, 100, 226), 0 0 40px rgb(121, 38, 138),
+    0 0 80px rgba(121, 38, 138), 0 0 90px rgba(121, 38, 138),
+    0 0 100px rgba(121, 38, 138), 0 0 140px rgba(121, 38, 138),
+    0 0 180px rgba(121, 38, 138);
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.formNewsletter {
+  padding: 20px;
+  margin: 50px 130px 50px 50px;
+  background-color: white;
+}
+
+.formNewsletter input {
+  width: 130%;
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+/*------------------SPORTWEAR y SWINWEAR--------------*/
+.containerP {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 30px 20px 60px 20px;
+  padding: 5px;
+}
+
+.galeriaP {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeriaP img {
+  height: 470px;
+  padding: 5px;
+}
+
+.containerHoodiesBikinis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 15px 150px 15px;
+  padding: 5px;
+}
+
+.galeriaH {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerHoodiesBikinis img {
+  height: 500px;
+  background-color: #dec0f1;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.productos h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.productos h3 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 25px;
+  padding: 10px;
+  text-align: left;
+  background-color: #dec0f1;
+}
+
+/*--------------------LOVFITERS----------------------------*/
+.textoAboutUs h3 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.t-stroke {
+  color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #eedfdf;
+  -webkit-text-stroke-color: #000000;
+}
+
+.t-shadow {
+  text-shadow: 7px 7px #c786f0;
+}
+
+.card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+
+.card img {
+  height: 400px;
+  margin-left: 17px;
+  padding-bottom: 20px;
+}
+
+.card p {
+  margin: 5px;
+  padding: 10px 20px 10px 20px;
+  background-color: #dec0f1;
+}
+
+/*------------    ABOUT US/LOVFITER-----------------*/
+.aboutUs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutUs img {
+  height: 480px;
+  padding: 15px;
+  margin: 150px 110px 35px 110px;
+  border-radius: 70px;
+  transition: all 400ms ease;
+}
+
+.aboutUs img:hover {
+  transform: translateY(-3%);
+}
+
+.textoAboutUs {
+  margin: 120px 100px 0 100px;
+  padding: 10px;
+  text-align: center;
+}
+
+.textoAboutUs h2 {
+  font-size: 30px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.textoAboutUs p {
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.resaltado {
+  background-color: #c786f0;
+  letter-spacing: 2px;
+}
+
+/*--------------------CONTACTO----------------------*/
+h1 {
+  padding: 25vh 3vh 8vh 3vh;
+  font-size: 50px;
+  text-align: center;
+}
+
+.mainContacto {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.textoForm p{
+  margin: 8vh 0 0 0;
+}
+.contacto {
+  margin: 7vh 5vh 10vh 5vh;
+  padding: 10px 30px 20px 30px;
+  background-color: #dc8aec;
+  border-radius: 18px;
+  box-shadow: 0 0 5px rgb(186, 100, 226), 0 0 10px rgba(186, 100, 226),
+    0 0 20px rgba(186, 100, 226), 0 0 40px rgb(233, 182, 243),
+    0 0 80px rgba(233, 182, 243), 0 0 90px rgba(233, 182, 243),
+    0 0 100px rgba(233, 182, 243), 0 0 140px rgba(233, 182, 243),
+    0 0 180px rgb(233, 182, 243);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 35px 10px 15px; 
+}
+
+.contacto input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 6px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #dc8aec;
+}
+
+.contacto select {
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 6px;
+}
+
+.contacto textarea {
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 485px;
+  max-width: 485px;
+  background-color: #dc8aec;
+}
+
+.forma {
+  font-size: 17px;
+  padding-bottom: 2vh;
+}
+
+/*--------------RESPONSIVE MOBILE LAST*-------------*/
+
+@media only screen and (max-width: 780px) {
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .header li {
+    padding: 0 15px;
+    margin: 0;
+  }
+/* -----------INDEX TABLET----------*/
+  .containerMayorista{
+    height: 60vh;
+  }
+  .btnMayorista{
+    flex-basis: none;
+    margin: 17vh 0 0 90vh;
+    font-size: 20px;
+  }
+  .containerBotones{
+    flex-direction: column;
+    height: 300vh;
+  }
+  .botones{
+    width: 90vh;
+    height: 90vh;
+    margin: 5vh 0 5vh 0;
+  }
+  .btnIndex{
+    margin: 78vh 25vh 0 25vh;
+  }
+/* -----------FOOTER TABLET----------*/
+  .footer ul {
+    width: 266px;
+    display: flex;
+    flex-direction: row;
+  }
+  /* -----------SWIN Y SPORT TABLET----------*/
+  .productos h2{
+    font-size: 8vh;
+    padding-top: 30vh;
+  }
+
+  .containerP {
+    gap: 20px;
+  }
+
+  .containerHoodiesBikinis img {
+    height: 70vh;
+    padding: 4vh;
+  }
+  .galeriaP{
+    padding: 0;
+  }
+
+  .galeriaP img{
+    height: 50vh;
+  }
+  /* -----------ABOUT US Y LOVFITER TABLET----------*/
+  .aboutUs img {
+    margin: 25vh 3vh 1vh 4vh;
+    height: 80vh
+  }
+  .textoAboutUs h3{
+    font-size: 8vh;
+  } 
+  .textoAboutUs {
+    margin: 25vh 4vh 1vh 4vh;
+  }
+  .container {
+    grid-template-columns: none;
+  }
+  .textoAboutUs p {
+    font-size: 16px;
+  }
+/* -----------CONTACTO TABLET----------*/
+  .mainContacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .textoForm P{
+    margin: 1vh 1vh 5vh 1vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2vh 0;
+  }
+
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 105px;
+    flex-wrap: nowrap;
+  }
+/* -----------INDEX MOBILE----------*/
+  .bannerIndex {
+    margin-bottom: 10vh;
+  }
+
+  .bannerNewcollection {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bannerNewcollection img {
+    margin-top: 18vh;
+  }
+
+  .containerBotones {
+    display: flex;
+    flex-direction: column;
+    height: 220vh;
+    align-items: center;
+    width: 100%;
+  }
+  .botones{
+    width: 100%;
+    height: 60vh;
+  }
+  .btnIndex{
+    margin: 50vh 5vh 0 5vh;
+  }
+
+  .containerMayorista {
+    display: none;
+  }
+
+  .mainNewsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    height: 300px;
+  }
+  .formNewsletter{
+    margin: 50px 75px 50px 10px;
+  }
+  /* -----------SWIN Y SPORT MOBILE----------*/
+  .containerHoodiesBikinis img {
+    height: 55vh;
+    padding: 0;
+  }
+  .containerHoodiesBikinis {
+    grid: none;
+    margin: 0 0 15vh 0;
+  }
+
+  .containerP{
+    grid: none;
+    margin: 0;
+  }
+  .galeriaP{
+    padding: 0;
+  }
+  .galeriaP img{
+    height: 55vh;
+    padding-bottom: 6vh;
+  }
+/* -----------ABOUT US/LOVFITER MOBILE----------*/
+  .aboutUs{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .aboutUs img{
+    height: 55vh;
+    margin: 20vh 0 0 0;
+  }
+
+  .aboutUs p{
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .textoAboutUs h2{
+    padding:8vh 0 0 0;
+  }
+  .textoAboutUs{
+    margin: 20vh 3vh 0 3vh;
+  }
+
+  .container {
+    grid: none;
+  }
+  .card {
+    padding: 0 0 6vh 0;
+  }
+  .textoAboutUs h3{
+    font-size: 6vh;
+  }
+/* -----------CONTATO MOBILE----------*/
+  .mainContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto{
+    width: 90%;
+  }
+  
+  .contacto textarea {
+    width: 90%;
+  }
+  .textoForm p{
+    margin: 3vh 0 5vh 0;
+  }
+/* -----------FOOTER MOBILE----------*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer li {
+    margin: 0 15px;
+    padding: 0;
+  }
+  .copyright {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+
