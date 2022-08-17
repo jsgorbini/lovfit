@@ -139,14 +139,14 @@ font-family: 'Roboto Condensed', sans-serif;*/
   transform: translateY(-5%);
 }
 
-.imgBtn1 {
-  background-image: url(../img/BTN1.JPEG);
+.botonUno {
+  background-image: url(../img/botonUno.jpeg);
 }
-.imgBtn2 {
-  background-image: url(../img/BTN2.JPEG);
+.botonDos {
+  background-image: url(../img/botonDos.jpeg);
 }
-.imgBtn3 {
-  background-image: url(../img/BTN3.JPEG);
+.botonTres {
+  background-image: url(../img/botonTres.jpeg);
 }
 
 .btnIndex {
