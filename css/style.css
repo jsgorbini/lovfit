@@ -18,7 +18,7 @@ font-family: 'Roboto Condensed', sans-serif;*/
   position: fixed;
   z-index: +100;
   width: 100%;
-  box-shadow: 0px 0px 40px rgba(208, 16, 233, 0.5);
+  box-shadow: 0px 0px 40px #d010e980;
 }
 
 .logo img {
@@ -37,6 +37,9 @@ font-family: 'Roboto Condensed', sans-serif;*/
 .header li {
   margin: 0 20px;
   padding: 0 15px;
+}
+.header a{
+  color: #8013bd;
 }
 
 .header a:hover {
@@ -88,8 +91,6 @@ font-family: 'Roboto Condensed', sans-serif;*/
   text-align: center;
   color: white;
 }
-
-
 
 .copyright {
   padding: 15px 15px 15px 15px;
@@ -258,11 +259,17 @@ font-family: 'Roboto Condensed', sans-serif;*/
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*overflow: hidden; esto lo dejo comentado porque no decido como lo quiero*/
 }
 
 .galeriaP img {
   height: 470px;
   padding: 5px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.galeriaP img:hover{
+  transform: scale(1.2);
 }
 
 .containerHoodiesBikinis {
@@ -390,6 +397,11 @@ font-family: 'Roboto Condensed', sans-serif;*/
   letter-spacing: 2px;
 }
 
+.margen img{
+  margin-top: 10vh;
+}
+
+
 /*--------------------CONTACTO----------------------*/
 h1 {
   padding: 25vh 3vh 8vh 3vh;
@@ -409,7 +421,7 @@ h1 {
 .contacto {
   margin: 7vh 5vh 10vh 5vh;
   padding: 10px 30px 20px 30px;
-  background-color: #dc8aec;
+  background-image: linear-gradient(345deg, #a95ad1, #eedfdf);
   border-radius: 18px;
   box-shadow: 0 0 5px rgb(186, 100, 226), 0 0 10px rgba(186, 100, 226),
     0 0 20px rgba(186, 100, 226), 0 0 40px rgb(233, 182, 243),
@@ -431,7 +443,6 @@ h1 {
   padding: 6px;
   border: none;
   border-bottom: 2px solid black;
-  background-color: #dc8aec;
 }
 
 .contacto select {
@@ -447,7 +458,6 @@ h1 {
   border-bottom: 2px solid black;
   width: 485px;
   max-width: 485px;
-  background-color: #dc8aec;
 }
 
 .forma {
